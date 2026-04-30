@@ -108,6 +108,21 @@ section { padding: 64px 0; }
   color: var(--accent); transition: transform .2s, background .3s;
 }
 .skill-tags span:hover { transform: scale(1.05); background: color-mix(in srgb, var(--accent) 20%, transparent); }
+
+/* ── Tooltip ── */
+.has-tooltip {
+  position: relative; cursor: pointer;
+}
+.has-tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%);
+  background: var(--text); color: var(--bg);
+  font-size: .75rem; font-weight: 400; width: max-content; max-width: 260px;
+  padding: 6px 12px; border-radius: 8px;
+  opacity: 0; pointer-events: none;
+  transition: opacity .2s;
+}
+.has-tooltip:hover::after { opacity: 1; }
 .skill-bar-wrap { margin-top: 16px; }
 .skill-bar-item { margin-bottom: 12px; }
 .skill-bar-item .label { display: flex; justify-content: space-between; font-size: .85rem; margin-bottom: 4px; }
