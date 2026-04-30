@@ -94,7 +94,7 @@
       <div class="skill-group">
         <h4>Infrastructure / Tools</h4>
         <div class="skill-tags">
-          <span class="has-tooltip" data-tooltip="DynamoDB / S3 / Bedrock / CodeBuild / CodePipeline / ECS / CloudWatch / Athena / Secrets Manager / DMS / Glue">AWS</span>
+          <span class="has-tooltip" data-tooltip="EC2 / ECS / RDS / DynamoDB / S3 / CloudWatch / Athena / CodeBuild / CodePipeline / Bedrock / Secrets Manager">AWS</span>
           <span>Docker</span>
           <span>MySQL</span>
           <span>Git</span>
@@ -137,7 +137,7 @@
         <h3>クーポン表示改善</h3>
         <ul>
           <li>データ保持契約上削除できない未使用クーポンの蓄積により、DBインスタンス15台でも性能劣化が発生。加えてRuby on Rails実装のためベンダー確保が困難という課題があった</li>
-          <li>DMS・Gluejobによるデータ連携基盤の構築に伴い、Ruby on Rails製のユーザー向けAPIをJavaへ移植。DBインスタンスを当初2台、継続的な移植により計5台削減</li>
+          <li>別チームによるDMS・Gluejobでユーザー表示に必要なクーポンデータのみを連携する基盤が構築され、データ量の課題を解消。これに伴いRuby on Rails製のユーザー向けAPIをSpringBootへ移植。DBインスタンスを当初2台、継続的な移植により計5台削減</li>
           <li>モールクーポンの商品画面表示および検索画面での新規表示機能を実装し、クーポン取得数170%・利用数180%に向上</li>
         </ul>
         <div class="tech-stack">
@@ -181,7 +181,7 @@
           <span>SpringBoot</span>
           <span>Jasper</span>
           <span>MyBatis</span>
-          <span class="has-tooltip" data-tooltip="DynamoDB / S3 / Bedrock / CodeBuild / CodePipeline / ECS / CloudWatch / Athena / Secrets Manager / DMS / Glue">AWS</span>
+          <span class="has-tooltip" data-tooltip="EC2 / ECS / RDS / DynamoDB / S3 / CloudWatch / Athena / CodeBuild / CodePipeline / Bedrock / Secrets Manager">AWS</span>
         </div>
       </div>
 
@@ -222,6 +222,22 @@
           <span>Amazon Bedrock</span>
           <span>CodeBuild</span>
           <span>Secrets Manager</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="period">通年</div>
+        <h3>その他の取り組み</h3>
+        <ul>
+          <li>CloudWatch・Athenaを活用したログ監視体制の整備と、本番障害時のバグ原因特定</li>
+          <li>CodePipelineの設定およびデプロイマニュアルの作成。個人的に会社と同等のパイプライン環境を構築し検証</li>
+          <li>ECSの再起動手順・オートスケール監視方法のまとめ資料を作成し、チーム内に展開</li>
+        </ul>
+        <div class="tech-stack">
+          <span>Amazon CloudWatch</span>
+          <span>Amazon Athena</span>
+          <span>CodePipeline</span>
+          <span>Amazon ECS</span>
         </div>
       </div>
     </div>

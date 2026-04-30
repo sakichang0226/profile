@@ -112,6 +112,7 @@ section { padding: 64px 0; }
 /* ── Tooltip ── */
 .has-tooltip {
   position: relative; cursor: pointer;
+  border-bottom: 2px dashed var(--accent);
 }
 .has-tooltip::after {
   content: attr(data-tooltip);
