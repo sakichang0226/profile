@@ -136,12 +136,24 @@
         <div class="period">2023年10月 〜 2024年4月</div>
         <h3>クーポン表示改善</h3>
         <ul>
+          <li>
+            マイクロサービス化されているプロダクトの一つのクーポンプロダクトには、
+            データ保持契約の都合上削除できないがユーザーが使用できないクーポンが残り続けており
+            結果、DBインスタンス上限15台あっても性能劣化見られ限界が来た。また、Ruby on Railsで実装されており
+            ベンダーを集めづらいという課題もあった。
+          </li>
+          <li>
+            そこで、ユーザー向けに画面に見せるクーポンのみをDMS、Gluejobで連携しデータ負荷の削減が計画された。
+            私は、Ruby on Railsで実装されているユーザー向けのAPIをJavaへ移植を担当し、2台のDBインスタンスの削減に成功
+            その後もユーザー向けの機能を継続的に移植し、DBインスタンスを5台削減
+          </li>
         </ul>
         <div class="tech-stack">
           <span>Java8</span>
           <span>SpringBoot</span>
-          <span>JMeter</span>
+          <span>Apache JMeter</span>
           <span>MySQL</span>
+          <span>Amazon DynamoDB</span>
         </div>
       </div>
 
