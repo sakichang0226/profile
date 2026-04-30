@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>職務経歴書</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <div class="inner">
+    <div class="nav-left">
+      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <polyline points="14 2 14 8 20 8"/>
+        <line x1="8" y1="13" x2="16" y2="13"/>
+        <line x1="8" y1="17" x2="16" y2="17"/>
+        <line x1="8" y1="9" x2="10" y2="9"/>
+      </svg>
+      <a href="#about">基本情報</a>
+      <a href="#skills">スキル</a>
+      <a href="#career">経歴</a>
+      <a href="#education">学歴・資格</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="テーマ切替">🌙</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <img src="face.png" alt="プロフィール写真" class="hero-avatar">
+  <h1>職務経歴書</h1>
+  <div class="links">
+    <a href="mailto:saki.develop0226@gmail.com">✉ Email</a>
+    <a href="https://github.com/sakichang0226" target="_blank">GitHub</a>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- 基本情報 -->
+  <section id="about">
+    <div class="section-title fade-in">基本情報</div>
+    <div class="card fade-in">
+      <div class="info-grid">
+        <div class="info-item"><label>氏名</label><span>大崎康太</span></div>
+        <div class="info-item"><label>年齢</label><span>20代</span></div>
+        <div class="info-item"><label>居住地</label><span>千葉県</span></div>
+        <div class="info-item"><label>趣味</label><span>カラオケ</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 職務要約 -->
+  <section>
+    <div class="section-title fade-in">職務要約</div>
+    <div class="card fade-in">
+      <p>
+        大学院修了後、auコマース&ライフ株式会社にて約4年間バックエンドエンジニアとして、
+        大規模ECサイト「au PAY マーケット」のバックエンド開発に従事。
+        20年以上前から開発されている社内独自フレームワークのレガシーシステムからSpringBootアプリケーションへの刷新案件を中心に対応し、
+        ブラックボックス化していたレガシーシステムの可視化とレイテンシを500ms以上短縮、DBインスタンスの削減によるコスト削減を達成しました。
+        現在は担当プロダクトのリード役として従事し、Java17/SpringBoot3.5への大規模アップデートや、Amazon Bedrockを活用したAIレビュー自動化環境の構築、
+        ベトナム人新入社員の教育など、技術選定からチームの生産性向上まで幅広く担っております。
+      </p>
+    </div>
+  </section>
+
+  <!-- スキル -->
+  <section id="skills">
+    <div class="section-title fade-in">スキル</div>
+    <div class="card fade-in">
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <div class="skill-tags">
+          <span>Java</span>
+          <span>Kotlin</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Frameworks / Libraries</h4>
+        <div class="skill-tags">
+          <span>SpringBoot</span>
+          <span>Spring Web</span>
+          <span>Spring Batch</span>
+          <span>Spring Security</span>
+          <span>MyBatis</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Infrastructure / Tools</h4>
+        <div class="skill-tags">
+          <span>AWS</span>
+          <span>Docker</span>
+          <span>MySQL</span>
+          <span>Git</span>
+          <span>gradle</span>
+          <span>Apache JMeter</span>
+          <span>Talend Api Tester</span>
+          <span>JIRA</span>
+          <span>Confluence</span>
+          <span>Amazon Q for Developer</span>
+        </div>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-item">
+          <div class="label"><span>バックエンド</span><span>80%</span></div>
+          <div class="bar"><div class="fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="label"><span>インフラ / DevOps</span><span>20%</span></div>
+          <div class="bar"><div class="fill" data-width="20"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 職務経歴 -->
+  <section id="career">
+    <div class="section-title fade-in">職務経歴</div>
+    <div class="card company-card fade-in">
+      <div class="company-header">
+        <div>
+          <h3 class="company-name">auコマース&ライフ株式会社</h3>
+          <div class="company-meta">2022年4月 〜 現在 ｜ バックエンドエンジニア</div>
+        </div>
+      </div>
+    </div>
+    <div class="timeline fade-in">
+
+      <div class="timeline-item">
+        <div class="period">2023年10月 〜 2024年4月</div>
+        <h3>クーポン表示改善</h3>
+        <ul>
+        </ul>
+        <div class="tech-stack">
+          <span>Java8</span>
+          <span>SpringBoot</span>
+          <span>JMeter</span>
+          <span>MySQL</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="period">2024年11月 〜 2025年3月</div>
+        <h3>カテゴリCMS Kotlin->Java移行</h3>
+        <ul>
+          <li>保守担当の社員アサインを増やすため、カテゴリページで表示する商品棚、看板画像、広告の社内管理システムのJavaへ移行</li>
+          <li>JWTを使ったログイン・社員ごとの権限管理のため、Spring SecurityのJava移行およびライブラリのバージョンアップ改修</li>
+          <li>S3を使った看板画像の登録・更新・削除のJava化</li>
+        </ul>
+        <div class="tech-stack">
+          <span>Java17</span>
+          <span>Kotlin</span>
+          <span>SpringBoot</span>
+          <span>Spring Security</span>
+          <span>Amazon S3</span>
+          <span>Docker</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="period">2025年4月 〜 2025年10月</div>
+        <h3>購入履歴刷新</h3>
+        <ul>
+          <li>バックエンド4名(実働3名+技術支援１人)のリード、新卒3年目のメンバー中心で案件を指導</li>
+          <li>au PAYマーケットの25年以上前から運用されている購入履歴（購入履歴詳細画面・購入履歴一覧画面・電子領収書の発行機能・受注キャンセル機能・返品機能）のレガシーシステムの刷新</li>
+          <li>商品名・購入日による履歴の絞り込み機能の新規実装によるNPS0.31%の向上</li>
+          <li>多数のテーブルの外部結合や不要なテーブルの取得を見直し、刷新前から500ms程度のレイテンシの向上</li>
+        </ul>
+        <div class="tech-stack">
+          <span>Java8</span>
+          <span>SpringBoot</span>
+          <span>Jasper</span>
+          <span>MyBatis</span>
+          <span>AWS</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="period">2026年2月 〜 2026年6月</div>
+        <h3>Java17/Spring Bootバージョンアップ</h3>
+        <ul>
+          <li>バックエンド3名(実働2名+技術支援１人)の実働</li>
+          <li>Spring Data DynamoDBから公式のSDKのv2に大刷新</li>
+          <li>
+            バージョンアップに伴い、Spring Batchの起動直後にCPU使用率を90%超えるが、正常な動きであり性能劣化の懸念がないことを特定
+            <ul>
+              <li>メモリ使用率や処理時間の新旧比較し削減されていることを確認、単純な劣化でないことを特定</li>
+              <li>バッチで処理するデータのレコード数によって使用率が変わらないことから起動時のリソースの使い方であることを確認</li>
+              <li>コンパイラの起動オプションにより、使用率と処理時間が比例することを確認、OSのバージョンアップによる正常な仕様であることを特定</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="tech-stack">
+          <span>Java17</span>
+          <span>SpringBoot3.5</span>
+          <span>Spring Batch</span>
+          <span>Amazon DynamoDB</span>
+          <span>Amazon S3</span>
+          <span>Docker</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="period">2026年4月 〜 現在</div>
+        <h3>AIレビューの自動化環境の構築</h3>
+        <ul>
+          <li>特定の人にレビューの負荷が偏る問題があり、自動化をしたいという上長の要望を叶えるため、案件の隙間時間を使い構築</li>
+          <li>Github Actionsが契約上使用することができないため、CodeBuildからGithub CLI経由でdiffを取得し、プルリクエスト内の差分をBedrockに投げ自動でレビューするシステムの構築</li>
+          <li>構築結果、人の手で見る必要のない指摘削減に成功し、他システムにも横展開中</li>
+        </ul>
+        <div class="tech-stack">
+          <span>Amazon Bedrock</span>
+          <span>CodeBuild</span>
+          <span>Secrets Manager</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 学歴・資格 -->
+  <section id="education">
+    <div class="section-title fade-in">学歴・資格</div>
+    <div class="card fade-in">
+      <h4 style="margin-bottom:8px;">学歴</h4>
+      <p>東京電機大学院 情報環境学研究科 修了（2022年3月）</p>
+    </div>
+    <div class="card fade-in">
+      <h4 style="margin-bottom:8px;">資格</h4>
+      <ul style="padding-left:18px;">
+        <li>生成AIパスポート（2026年）</li>
+        <li>AWS Certified Solutions Architect – Associate（2026年）</li>
+        <li>AWS Certified Cloud Practitioner (CLF-C02)（2026年）</li>
+        <li>AWS Certified Database – Specialty (DBS)（2024年）</li>
+        <li>AWS Certified Developer - Associate（2023年）</li>
+        <li>基本情報技術者試験（2019年）</li>
+        <li>応用情報技術者試験（2019年）</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 自己PR -->
+  <section>
+    <div class="section-title fade-in">自己PR</div>
+    <div class="card fade-in">
+      <p>ここに自己PRを記載してください。強み、仕事への姿勢、今後のキャリアビジョンなどを記述します。</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 saki0226 for GitHub Pages</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
